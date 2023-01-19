@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Castro</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a654d59b05.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- nav -->
-    <ul class="nav justify-content-center bg-dark text-white fixed-top">
+    <ul class="nav justify-content-center text-bg-dark">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
@@ -18,10 +19,10 @@
           <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="#work">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
       
@@ -54,7 +55,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-bg-secondary">Library Web App</h5>
                       <p class="card-text text-bg-secondary">A Flask web app with myqsl database to display your favorites books.</p>
-                      <a href="#" class="btn btn-primary">See Code</a>
+                      <a href="#" class="btn btn-info">See Code</a>
                     </div>
                   </div>
                 </div>
@@ -64,7 +65,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-bg-secondary">Mailer Web App</h5>
                       <p class="card-text text-bg-secondary">A mailer web site where you can send and see mails using the sendgrid API.</p>
-                      <a href="#" class="btn btn-primary">See Code</a>
+                      <a href="#" class="btn btn-info">See Code</a>
                     </div>
                   </div>
                 </div>
@@ -74,7 +75,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-bg-secondary">Spotify Top 100</h5>
                       <p class="card-text text-bg-secondary">An script that create a spotify playlist of the top 100 billboard with any date.</p>
-                      <a href="#" class="btn btn-primary">See Code</a>
+                      <a href="#" class="btn btn-info">See Code</a>
                     </div>
                   </div>
                 </div>
@@ -93,12 +94,30 @@
     </div>
 
       <!-- work -->
-    <div class="container p-4 text-center">
-      <h2>Work And Education</h2>
-      <p><strong>Python Developer Industry Trainee. </strong>Brainnest</p>
+    <div class="container p-5 text-center" id="work">
+      <h1>Work And Education</h1>
+      <p class="p-3"><strong>Python Developer Industry Trainee. </strong> At Brainnest (2023-present).</p>
     </div>
 
+  <div class="container-fluid bg-warning text-center p-3" id="contact">
+    <h1 class="mb-3">Contact</h1>
+    <!-- <ul class="list-group">
+      <li class="list-group-item"><a href=""><i class="fa-brands fa-linkedin fa-xl btn"></i></a></li>
+      <li class="list-group-item"><a href="https://github.com/DavidCs9/"><i class="fa-brands fa-square-github fa-xl btn"></i></a></li>
+    </ul> -->
+      <a href=""><i class="fa-brands fa-linkedin fa-xl btn"></i></a>
+      <a href="https://github.com/DavidCs9/"><i class="fa-brands fa-square-github fa-xl btn"></i></a>
+      <footer>
+        <div class="m-2">
+        <p class="mb-0">All rights reserved.</p>
+        <p">Created and Design by David Castro</p>
+      </div>
+      </footer>
+  </div>
 
+  <div class="container-fluid bg">
+    
+  </div>
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
