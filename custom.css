@@ -1,0 +1,10 @@
+@media (min-width: 800px) {
+    .carousel {
+    max-width: 620px;
+    margin: auto;
+    }
+  }
+
+#home{
+    margin-top: 85px;
+}
