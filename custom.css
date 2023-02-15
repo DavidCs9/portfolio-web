@@ -1,39 +1,50 @@
 @media (min-width: 800px) {
-    .carousel {
+  .carousel {
     max-width: 620px;
     margin: auto;
-    }
   }
+}
 
-.container{
+.container {
   min-height: 105vh;
   display: grid;
   place-items: center;
   align-content: center;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
 }
 
-.show{
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
 
-body{
+body {
   background-color: black;
 }
 
-
-#nav{
-  background-color: #EDEDED;
+#nav {
+  background-color: #ededed;
 }
 
-.bg-cards{
+.bg-cards {
   background-color: #444444;
+}
+
+.wk:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.wk:nth-child(3) {
+  transition-delay: 1000ms;
+}
+
+#cert {
+  transition-delay: 2000ms;
 }
