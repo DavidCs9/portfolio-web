@@ -5,6 +5,35 @@
     }
   }
 
-#home{
-    margin-top: 85px;
+.container{
+  min-height: 105vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+body{
+  background-color: black;
+}
+
+
+#nav{
+  background-color: #EDEDED;
+}
+
+.bg-cards{
+  background-color: #444444;
 }

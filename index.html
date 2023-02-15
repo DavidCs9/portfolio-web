@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,149 +9,148 @@
     <script src="https://kit.fontawesome.com/a654d59b05.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="custom.css"> 
     <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico">
-</head>
-<body>
-
+  </head>
+  <body>
+    
     <!-- nav -->
-    <ul class="nav justify-content-center text-bg-dark text-white fixed-top">
-        <li class="nav-item">
-          <a class="nav-link text-light" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#work">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#contact">Contact</a>
-        </li>
-      </ul>
-      
-
-    <!-- home -->
-        <div class="container" id="home">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="static/images/david.jpg" class="img-fluid rounded w-75 mx-auto d-block" alt="..." >
-                </div>
-                <div class="col-sm-6 mt-5 text-center d-flex flex-column align-items-sm-baseline">
-                    <h1 class="">Hi. I'm <strong>David Castro</strong>.</h1>
-                    <p class="">I'm a Python developer.</p>
-                </div>
-            </div>
+    <ul class="nav justify-content-center fixed-top" id="nav">
+      <li class="nav-item">
+        <a class="nav-link text-dark" aria-current="page" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#work">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#contact">Contact</a>
+      </li>
+    </ul>
+    
+    
+      <!-- home -->
+      <div class="hidden container text-white" id="home">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="static/images/david.jpg" class="img-fluid rounded w-75 mx-auto d-block" alt="..." >
+          </div>
+          <div class="col-sm-6 mt-5 text-center d-flex flex-column align-items-sm-baseline">
+            <h1 class="">Hi. I'm <strong>David Castro</strong>.</h1>
+            <p class="">I'm a Software Developer.</p>
+          </div>
         </div>
-
+      </div>
+      
       <!-- porfolio -->
-      <div class="container-fluid mt-5 p-5 bg-dark text-white" id="portfolio">
-            <h2 class="text-center">Here are my favorite projects.</h2>
-					  <p class="text-center">All are code in Python.</p>
-
-            <!-- carousel -->
+      <div class="hidden container container-fluid mt-5 p-5 text-white" id="portfolio">
+        <h2 class="text-center">Here are my favorite projects.</h2>
+        <p class="text-center">To see all my projects check my <a href="https://github.com/DavidCs9">github</a>.</p>
+        
+        
+        <!-- carousel -->
+        
+        <div id="carousel" class="carousel">
+          <div class="carousel-inner">
             
-            <div id="carousel" class="carousel">
-              <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                  <div class="card bg-secondary">
-                    <img src="./static/images/moviemind4X3.jpg" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-bg-secondary">Movie recommender</h5>
-                      <p class="card-text text-bg-secondary">A web app that recommend movies using IA. Build with astro and svelte.</p>
-                      <a href="https://github.com/DavidCs9/movie-mind" class="btn btn-info">See Code</a>
-                      <a href="https://movie-mind-1k382cnam-davidcs9.vercel.app/" class="btn btn-warning">See Website</a>
-                    </div>
-                  </div>
+            <div class="carousel-item active">
+              <div class="card bg-cards">
+                <img src="./static/images/moviemind4X3.jpg" class="img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title ">Movie recommender</h5>
+                  <p class="card-text">A web app that recommend movies using IA. Build with astro and svelte.</p>
+                  <a href="https://github.com/DavidCs9/movie-mind" class="btn btn-info">See Code</a>
+                  <a href="https://movie-mind-1k382cnam-davidcs9.vercel.app/" class="btn btn-warning">See Website</a>
                 </div>
-
-
-                <div class="carousel-item">
-                  <div class="card bg-secondary">
-                    <img src="./static/images/book4X3.jpg" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-bg-secondary">Library Web App</h5>
-                      <p class="card-text text-bg-secondary">A web app using flask and sql database. Deploy on AWS</p>
+              </div>
+            </div>
+            
+            
+            <div class="carousel-item">
+              <div class="card bg-cards">
+                <img src="./static/images/book4X3.jpg" class="img-fluid" alt="...">
+                <div class="card-body">
+                      <h5 class="card-title ">Library Web App</h5>
+                      <p class="card-text ">A web app using flask and sql database. Deploy on AWS</p>
                       <a href="https://github.com/DavidCs9/Library" class="btn btn-info">See Code</a>
                       <a href="http://librarywebapp-env.eba-d9yqgmfj.us-west-1.elasticbeanstalk.com//" class="btn btn-warning">See Website</a>
                     </div>
                   </div>
                 </div>
-
-
+                
+                
                 <div class="carousel-item">
-                  <div class="card bg-secondary">
+                  <div class="card bg-cards">
                     <img src="./static/images/mailer4x3.jpg" class="img-sm" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-bg-secondary">Mailer Web App</h5>
-                      <p class="card-text text-bg-secondary">A mailer web site where you can send and see mails using the sendgrid API.</p>
+                      <h5 class="card-title ">Mailer Web App</h5>
+                      <p class="card-text ">A mailer web site where you can send and see mails using the sendgrid API.</p>
                       <a href="https://github.com/DavidCs9/mailerapp" class="btn btn-info">See Code</a>
                     </div>
                   </div>
                 </div>
-
-
+                
+                
                 <div class="carousel-item">
-                  <div class="card bg-secondary">
+                  <div class="card bg-cards">
                     <img src="./static/images/spotify4X3.jpg" class="img-sm" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-bg-secondary">Spotify Top 100</h5>
-                      <p class="card-text text-bg-secondary">An script that create a spotify playlist of the top 100 billboard with any date.</p>
+                      <h5 class="card-title ">Spotify Top 100</h5>
+                      <p class="card-text ">An script that create a spotify playlist of the top 100 billboard with any date.</p>
                       <a href="https://github.com/DavidCs9/spotify_playlist" class="btn btn-info">See Code</a>
                     </div>
                   </div>
                 </div>
-
-
-               <div class="carousel-item">
-                  <div class="card bg-secondary">
+                
+                
+                <div class="carousel-item">
+                  <div class="card bg-cards">
                     <img src="./static/images/tindog4x3.jpg" class="img-sm" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-bg-secondary">TinDog</h5>
-                      <p class="card-text text-bg-secondary">Modern website for startup using bootstrap, full responsive.</p>
+                      <h5 class="card-title ">TinDog</h5>
+                      <p class="card-text ">Modern website for startup using bootstrap, full responsive.</p>
                       <a href="https://github.com/DavidCs9/TinDog" class="btn btn-info">See Code</a>
                       <a href="https://davidcs9.github.io/TinDog/" class="btn btn-warning">See Website</a>
                     </div>
                   </div>
                 </div>
-
-
+                
+                
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            
-        </div>
-      </div>
-    </div>
-
-      <!-- work -->
-    <div class="container p-5 text-center" id="work">
+                <span class="carousel-control-next-icon" aria-hidden="true"></ bg-dark
+                </div>
+              </div>
+            </div>
+    <!-- work -->
+    <div class="hidden container p-5 text-center text-white" id="work">
       <h1 class="pb-3">Work And Education</h1>
       <p class=""><strong>Python Developer Industry Trainee. </strong> At Brainnest (2023-present).</p>
       <p class=""><strong>Mechatronics Engineering. </strong> At Univeridad La Salle Chihuahua (2017-2022).</p>
       <p class=""><strong> EFSET English Certificate (C2 Proficient). </strong> At EF SET (2022).</p>
     </div>
-
-  <div class="container-fluid bg-info text-center p-3" id="contact">
-    <h1 class="mb-3">Contact</h1>
-
+    
+    <!-- contact -->
+    <div class="container-fluid bg-info text-center p-3" id="contact">
+      <h1 class="mb-3">Contact</h1>
+      
       <a href="https://www.linkedin.com/in/david-eduardo-castro-siqueiros-0204a2219/"><i class="fa-brands fa-linkedin fa-xl btn"></i></a>
       <a href="https://github.com/DavidCs9/"><i class="fa-brands fa-square-github fa-xl btn"></i></a>
       <footer>
         <div class="m-2">
-        <p class="mb-0">All rights reserved.</p>
-        <p">Created and Design by David Castro</p>
-      </div>
+          <p class="mb-0">All rights reserved.</p>
+          <p">Created and Design by David Castro</p>
+        </div>
       </footer>
-  </div>
+    </div>
     <!-- bootstrap -->
     <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script defer src="app.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-</body>
-</html>
+    
+  </body>
+  </html>
